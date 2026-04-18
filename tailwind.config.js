@@ -1,6 +1,6 @@
 // tailwind.config.js
 module.exports = {
-  darkMode: 'class', // Ye line compulsory hai
+  darkMode: "class", // Ye line compulsory hai
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -10,4 +10,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

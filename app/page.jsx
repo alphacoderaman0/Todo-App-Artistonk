@@ -9,16 +9,21 @@ function AppUI() {
   const { isDarkMode, setIsDarkMode } = useTodos();
 
   return (
-    <main className={`min-h-screen transition-colors duration-500 py-10 px-4 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#f1f5f9]'}`}>
+    <main
+      className={`min-h-screen transition-colors duration-500 py-10 px-4 ${isDarkMode ? "bg-[#0f172a]" : "bg-[#f1f5f9]"}`}
+    >
       <div className="max-w-2xl mx-auto space-y-6">
-        
         <div className="flex justify-between items-center px-4">
-          <h1 className={`text-4xl font-black tracking-tight ${isDarkMode ? 'text-white' : 'text-slate-900'}`}>MY TASKS</h1>
-          <button 
-            onClick={() => setIsDarkMode(!isDarkMode)} 
+          <h1
+            className={`text-4xl font-black tracking-tight ${isDarkMode ? "text-white" : "text-slate-900"}`}
+          >
+            MY TASKS
+          </h1>
+          <button
+            onClick={() => setIsDarkMode(!isDarkMode)}
             className="p-3 rounded-2xl bg-white dark:bg-gray-800 shadow-xl transition-transform active:scale-90"
           >
-            {isDarkMode ? '☀️' : '🌙'}
+            {isDarkMode ? "☀️" : "🌙"}
           </button>
         </div>
 
